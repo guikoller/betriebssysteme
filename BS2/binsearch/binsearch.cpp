@@ -13,7 +13,7 @@ size_t binsearch(const vector<int> &a, int s, int li, int re) {
   } else if (s < a[mi]) {
     return binsearch(a, s, li, mi - 1);
   } else { // s > a[mi]
-    return binsearch(a, s, mi, re);
+    return binsearch(a, s, mi + 1, re);
   }
 }
 
