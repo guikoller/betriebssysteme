@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-  for (int i=1; i<=1000000; i++) {
+  for (int i=1; i<=2500000; i++) {
      cout << i << endl;
   }
   return 0;
