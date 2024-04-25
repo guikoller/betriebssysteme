@@ -23,7 +23,11 @@ int main(int argc, char* argv[] ) {
     if (argc == 1){
         std::cin >> kommando;
     }else{
-        kommando = argv[1];
+        //concat the strings into kommando if more than one argument
+        for (int i = 1; i < argc; i++) {
+            kommando += argv[i];
+            kommando += " ";
+        }
         std::cout << kommando << std::endl;
     }
     
